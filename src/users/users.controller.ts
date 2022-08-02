@@ -46,6 +46,7 @@ export class UsersController {
     file: Express.Multer.File,
   ) {
     console.log(file);
+    return file.path;
   }
 
   @Get()

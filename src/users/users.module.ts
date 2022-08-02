@@ -9,7 +9,6 @@ import { MulterModule } from '@nestjs/platform-express/multer';
   imports: [
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
     MulterModule.register({
-      dest: './uploadedFiles',
       fileFilter: (req, file, cb) => {
         if (file.mimetype.startsWith('image')) {
           cb(null, true);
