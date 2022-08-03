@@ -13,8 +13,7 @@ import { join } from 'path';
       'mongodb+srv://admin:EcEmFknZLhi3LRnH@cluster0.sagi9da.mongodb.net/?retryWrites=true&w=majority',
     ),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '../public'),
-      serveRoot: '/public/',
+      rootPath: join(__dirname, '..', 'src', 'public'),
     }),
   ],
   controllers: [AppController],
