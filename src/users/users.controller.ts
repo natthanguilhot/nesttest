@@ -28,7 +28,6 @@ export class UsersController {
       storage: diskStorage({
         destination: './uploadedFiles',
         filename: (req, file, cb) => {
-          console.log(file);
           const mimetype = file.mimetype.split('/')[1];
           const fileName =
             file.originalname + '-' + Date.now() + '.' + mimetype;
