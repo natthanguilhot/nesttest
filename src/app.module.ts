@@ -12,7 +12,7 @@ import { ApiModule } from './api/api.module';
       'mongodb+srv://admin:EcEmFknZLhi3LRnH@cluster0.sagi9da.mongodb.net/?retryWrites=true&w=majority',
     ),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'uploadedFiles'),
+      rootPath: join(__dirname, '..', 'public'),
     }),
     ApiModule,
   ],
